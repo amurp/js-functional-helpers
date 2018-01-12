@@ -1,6 +1,6 @@
 {
   "name": "js-functional-helpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "functional javascript helpers",
   "main": "src/index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amurp/immutable.git"
+    "url": "git+https://github.com/amurp/js-functional-helpers.git"
   },
   "author": "https://github.com/amurp",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amurp/immutable/issues"
+    "url": "https://github.com/amurp/js-functional-helpers/issues"
   },
-  "homepage": "https://github.com/amurp/immutable#readme",
+  "homepage": "https://github.com/amurp/js-functional-helpers#readme",
   "devDependencies": {
     "tape": "^4.8.0"
   }
