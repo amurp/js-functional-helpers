@@ -1,0 +1,19 @@
+{
+  "name": "immutable",
+  "version": "1.0.0",
+  "description": "javascript immutable helpers",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amurp/immutable.git"
+  },
+  "author": "https://github.com/amurp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amurp/immutable/issues"
+  },
+  "homepage": "https://github.com/amurp/immutable#readme"
+}
