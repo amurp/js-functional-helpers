@@ -1,16 +1,21 @@
-const replaceElement = (array, index, newValue) => {
+const pushElement = (array, newElement) => {
+  return [ ...array, newElement];
+}
+
+const replaceElement = (array, index, newElement) => {
   return [
     ...array.slice(0, index),
-    newValue,
-    ...array.slice(index + 1, array.length - 1)
+    newElement,
+    ...array.slice(index + 1)
   ];
-}
+};
 
 const reverse = (array) => {
   return [...array].reverse();
-}
+};
 
 module.exports = {
+  pushElement,  
   replaceElement,
   reverse,
-}
+};
