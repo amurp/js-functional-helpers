@@ -1,3 +1,7 @@
+const immutablePop = (array) => {
+  return [...array].slice(0, -1)
+};
+
 const immutablePushElement = (array, newElement) => {
   return [ ...array, newElement];
 };
@@ -15,6 +19,7 @@ const immutableReverse = (array) => {
 };
 
 module.exports = {
+  immutablePop,
   immutablePushElement,  
   immutableReplaceElement,
   immutableReverse,
