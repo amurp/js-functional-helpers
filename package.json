@@ -1,7 +1,7 @@
 {
-  "name": "immutable",
+  "name": "js-functional-helpers",
   "version": "1.0.0",
-  "description": "javascript immutable helpers",
+  "description": "functional javascript helpers",
   "main": "src/index.js",
   "scripts": {
     "test": "node_modules/tape/bin/tape tests/**/**/*.test.js"
