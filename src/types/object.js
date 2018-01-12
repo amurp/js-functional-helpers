@@ -1,4 +1,4 @@
-const removeKey = (object, keyToRemove) => {
+const immutableRemoveKey = (object, keyToRemove) => {
   const keys = Object.keys(object);
   const newObject = {};
   keys.forEach(key => {
@@ -9,7 +9,7 @@ const removeKey = (object, keyToRemove) => {
   return newObject;
 };
 
-const replaceKeyValue = (object, key, newValue) => {
+const immutableReplaceKeyValue = (object, key, newValue) => {
   return {
     ...object,
     [key]: newValue
@@ -17,6 +17,6 @@ const replaceKeyValue = (object, key, newValue) => {
 }
 
 module.exports = {
-  removeKey,
-  replaceKeyValue,
+  immutableRemoveKey,
+  immutableReplaceKeyValue,
 }

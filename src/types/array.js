@@ -1,8 +1,8 @@
-const pushElement = (array, newElement) => {
+const immutablePushElement = (array, newElement) => {
   return [ ...array, newElement];
-}
+};
 
-const replaceElement = (array, index, newElement) => {
+const immutableReplaceElement = (array, index, newElement) => {
   return [
     ...array.slice(0, index),
     newElement,
@@ -10,12 +10,12 @@ const replaceElement = (array, index, newElement) => {
   ];
 };
 
-const reverse = (array) => {
+const immutableReverse = (array) => {
   return [...array].reverse();
 };
 
 module.exports = {
-  pushElement,  
-  replaceElement,
-  reverse,
+  immutablePushElement,  
+  immutableReplaceElement,
+  immutableReverse,
 };
