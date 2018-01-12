@@ -10,7 +10,9 @@ A growing library of functional javascript helpers.
 ```
 const helpers = require('js-functional-helpers');
 ```
-## Examples (Arrays)
+## Examples 
+
+### Working with arrays
 Push an new array element (returns a new, non-mutated array):
 ```javascript
 helpers.array.pushElement([1, 2, 3], 4)
@@ -26,14 +28,13 @@ Reverse an array (returns a new, non-mutated array):
 helpers.array.reverse([1, 2, 3])
 // returns [3, 2, 1]
 ```
-
-## Examples (Objects)
+### Working with objects
 Remove a key from an object (returns a new, non-mutated object):
 ```javascript
 helpers.object.removeKey({ id: '1', age: 200}, 'age')
 // returns { id: '1' }
 ```
-Replace the value of a given object's key ct (returns a new, non-mutated object):
+Replace the value of a given key within an object (returns a new, non-mutated object):
 ```javascript
 helpers.object.replaceKeyValue({ id: '1', age: 200}, 'age', 700)
 // returns { id: '1', age: 700 }
