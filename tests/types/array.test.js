@@ -39,3 +39,26 @@ test('array.immutableReverse: reverse the given array', (t) => {
 
   t.end();
 });
+
+test('array.immutableSort: sort the given array without an optional compareFunction', (t) => {
+  const array = [3, 2, 1];
+  const actualOutput = helpers.immutableSort(array);
+  const expectedOutput = [1, 2, 3];
+
+  t.deepEqual(actualOutput, expectedOutput);
+
+  test('array.immutableSort: sort the given array with a compareFunction', (t) => {
+    const array = [1, 1000, 400];
+    const compareFunction = (a, b) => {
+      return a + b;
+    };
+    const actualOutput = helpers.immutableSort(array, compareFunction);
+    const expectedOutput = [400, 1000, 1];
+  
+    t.deepEqual(actualOutput, expectedOutput);
+  
+    t.end();
+  });
+
+  t.end();
+});

@@ -10,7 +10,7 @@ A growing library of functional javascript helpers.
 ```
 const helpers = require('js-functional-helpers');
 ```
-## Examples 
+## A Few Examples 
 
 ### Working with arrays
 Pop an element off of the end of an array (returns a new, non-mutated array):

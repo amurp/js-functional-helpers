@@ -18,9 +18,19 @@ const immutableReverse = (array) => {
   return [...array].reverse();
 };
 
+const immutableSort = (array, compareFunction) => {
+  if (compareFunction && typeof compareFunction === 'function') {
+    return [...array].sort(compareFunction);
+  }
+  else {
+    return [...array].sort();
+  }
+};
+
 module.exports = {
   immutablePop,
   immutablePushElement,  
   immutableReplaceElement,
   immutableReverse,
+  immutableSort,
 };
