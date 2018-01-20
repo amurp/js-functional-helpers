@@ -2,6 +2,13 @@
 
 A growing library of functional javascript helpers.
 
+## Test status:
+
+File       |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+-----------|----------|----------|----------|----------|----------------|
+All files  |      100 |      100 |      100 |      100 |                |
+ array.js  |      100 |      100 |      100 |      100 |                |
+ object.js |      100 |      100 |      100 |      100 |                |
 ## To install:
 
 ```npm install js-functional-helpers```
@@ -10,7 +17,7 @@ A growing library of functional javascript helpers.
 ```
 const helpers = require('js-functional-helpers');
 ```
-## A Few Examples 
+## A few examples:
 
 ### Working with arrays
 Pop an element off of the end of an array (returns a new, non-mutated array):
@@ -44,4 +51,5 @@ Replace the value of a given key within an object (returns a new, non-mutated ob
 helpers.object.immutableReplaceKeyValue({ id: '1', age: 200}, 'age', 700);
 // returns { id: '1', age: 700 }
 ```
+
 
